@@ -1,6 +1,4 @@
-# Example Geb and Gradle Project
-
-[![Build Status][build_status]](https://circleci.com/gh/geb/geb-example-gradle/tree/master)
+# Initial BDDStack setup and samples
 
 ## Description
 
