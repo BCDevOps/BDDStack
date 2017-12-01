@@ -1,5 +1,8 @@
 FROM centos:centos7
-MAINTAINER Roland Stens <rstens@stens.ca>
+LABEL name="BDDStack" \ 
+			maintainer="Roland Stens <rstens@stens.ca>" \
+			version="0.1" \
+			description="Google Chrome Headless in a container"
 
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release
