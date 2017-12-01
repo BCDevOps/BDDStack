@@ -19,7 +19,7 @@ RUN groupadd -r chrome && useradd -r -g chrome -G audio,video chrome \
 USER chrome
 
 # some place we can mount and view lighthouse reports
-VOLUME /home/chrome/BDDStack/build/reports
-WORKDIR /home/chrome/BDDStack/build/reports
+#VOLUME /home/chrome/BDDStack/build/reports
+#WORKDIR /home/chrome/BDDStack/build/reports
 
 CMD [ "/bin/bash" ]
