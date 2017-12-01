@@ -22,11 +22,4 @@ USER chrome
 VOLUME /home/chrome/BDDStack/build/reports
 WORKDIR /home/chrome/BDDStack/build/reports
 
-# Expose port 9222
-EXPOSE 9222
-
-# Autorun chrome headless with no GPU
-ENTRYPOINT [ "google-chrome-stable" ]
-CMD [ "--headless", "--disable-gpu", "--remote-debugging-address=0.0.0.0", "--remote-debugging-port=9222" ]
-
 CMD [ "/bin/bash" ]
