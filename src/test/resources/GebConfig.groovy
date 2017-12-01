@@ -8,8 +8,6 @@ import org.openqa.selenium.Dimension
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.firefox.FirefoxDriver
-import org.openqa.selenium.ie.InternetExplorerDriver
-import org.openqa.selenium.remote.DesiredCapabilities
 
 waiting {
 	timeout = 15
@@ -43,17 +41,6 @@ environments {
 	firefox {
 		atCheckWaiting = 1
 		driver = { new FirefoxDriver() }
-	}
-	
-	// run via “./gradlew ieTest”
-	// See: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
-	ie {
-		def d = new DesiredCapabilities();
-		d.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
-		d.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING,true);
-		d.setCapability(InternetExplorerDriver.NATIVE_EVENTS,false);
-		d.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS,true);
-		driver = { new InternetExplorerDriver(d) }	
 	}
 }
 
