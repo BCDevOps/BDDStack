@@ -18,6 +18,10 @@ RUN groupadd -r chrome && useradd -r -g chrome -G audio,video chrome \
 # Run Chrome non-privileged
 USER chrome
 
+# some place we can mount and view lighthouse reports
+VOLUME /home/chrome/BDDStack/build/reports
+WORKDIR /home/chrome/BDDStack/build/reports
+
 # Expose port 9222
 EXPOSE 9222
 
