@@ -18,13 +18,13 @@ waiting {
 environments {
 	
 	// run via “./gradlew chromeTest”
-	// See: http://code.google.com/p/selenium/wiki/ChromeDriver
+	// See: https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver
 	chrome {
 		driver = { new ChromeDriver() }
 	}
 
 	// run via “./gradlew chromeHeadlessTest”
-	// See: http://code.google.com/p/selenium/wiki/ChromeDriver
+	// See: https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver
 	chromeHeadless {
 		driver = {
 			ChromeOptions o = new ChromeOptions()
@@ -36,7 +36,7 @@ environments {
 	}
 	
 	// run via “./gradlew firefoxTest”
-	// See: http://code.google.com/p/selenium/wiki/FirefoxDriver
+	// See: https://github.com/SeleniumHQ/selenium/wiki/FirefoxDriver
 	firefox {
 		atCheckWaiting = 1
 
@@ -44,7 +44,7 @@ environments {
 	}
 	
 	// run via “./gradlew ieTest”
-	// See: http://code.google.com/p/selenium/wiki/InternetExplorerDriver
+	// See: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
 	ie {
 		def d = new DesiredCapabilities();
 		d.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
