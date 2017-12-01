@@ -15,7 +15,6 @@ ext {
         seleniumVersion = '3.6.0'
         chromeDriverVersion = '2.32'
         geckoDriverVersion = '0.18.0'
-        ieDriverVersion = seleniumVersion
     }
 }
 
@@ -40,7 +39,6 @@ dependencies {
     // Drivers
     testCompile "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
     testCompile "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
-    testCompile "org.seleniumhq.selenium:selenium-ie-driver:$seleniumVersion"
 }
 
 webdriverBinaries {
