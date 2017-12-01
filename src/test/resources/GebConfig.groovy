@@ -27,6 +27,8 @@ environments {
 		driver = {
 			ChromeOptions o = new ChromeOptions()
 			o.addArguments('headless')
+			o.addArguments('disable-gpu') 
+			o.addArguments('no-sandbox')
 			new ChromeDriver(o)
 		}
 	}
