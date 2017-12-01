@@ -44,7 +44,6 @@ dependencies {
 webdriverBinaries {
     chromedriver chromeDriverVersion
     geckodriver geckoDriverVersion
-    iedriver ieDriverVersion
 }
 
 drivers.each { driver ->
