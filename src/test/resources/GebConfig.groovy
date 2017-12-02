@@ -8,13 +8,14 @@ import org.openqa.selenium.Dimension
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
 import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.firefox.FirefoxOptions
+import org.openqa.selenium.ie.InternetExplorerDriver
+import org.openqa.selenium.edge.EdgeDriver
+import org.openqa.selenium.remote.DesiredCapabilities
 
 waiting {
-	timeout = 15
-	retryInterval = 1
+	timeout = 2
 }
-
-atCheckWaiting = [20, 1]
 
 environments {
 	
@@ -40,7 +41,36 @@ environments {
 	// See: https://github.com/SeleniumHQ/selenium/wiki/FirefoxDriver
 	firefox {
 		atCheckWaiting = 1
+
 		driver = { new FirefoxDriver() }
+	}
+	
+	firefoxHeadless {
+		atCheckWaiting = 1
+
+		driver = {
+			FirefoxOptions o = new FirefoxOptions()
+			o.addArguments("-headless")
+			new FirefoxDriver(o)
+		}
+	}
+	
+	// run via “./gradlew ieTest”
+	// See: https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver
+	ie {
+		def d = new DesiredCapabilities();
+		d.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
+		d.setCapability(InternetExplorerDriver.IGNORE_ZOOM_SETTING,true);
+		d.setCapability(InternetExplorerDriver.NATIVE_EVENTS,false);
+		d.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS,true);
+		
+		driver = { new InternetExplorerDriver(d) }	
+	}
+
+	// run via “./gradlew edgeTest”
+	// See: https://github.com/SeleniumHQ/selenium/wiki
+	edge {
+		driver = { new EdgeDriver() }
 	}
 }
 
