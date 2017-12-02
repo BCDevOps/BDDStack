@@ -1,10 +1,12 @@
-# Initial BDDStack setup and samples
+# BDDStack setup and sample tests
 
 ## Description
 
 This is an example of incorporating Geb into a Gradle build. It shows the use of Spock and JUnit 4 tests.
 
-The build is setup to work with Firefox, Chrome and ChromeHeadless. We'll shortly add configurations to support IE and Safari Have a look at the `build.gradle` and the `src/test/resources/GebConfig.groovy` files.
+The build is setup to work with a variety of browsers and we aim to add as many as possible.
+Work has been progressing on the pipeline to replace phantomJs with chromeHeadless. Please see the Dockerfile setup [here]:https://github.com/agehlers/openshift-tools/blob/master/provisioning/jenkins-slaves/chrome/Dockerfile
+
 
 ## Usage
 
