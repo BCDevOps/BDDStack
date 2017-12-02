@@ -46,13 +46,11 @@ environments {
 
 // To run the tests with all browsers just run “./gradlew test”
 
-baseUrl = "http://gebish.org"
-
 baseNavigatorWaiting = true
+baseUrl = "http://gebish.org"
 
 println "BaseURL: ${baseUrl}"
 println "--------------------------"
-reportsDir = "gebReports"
 
 cacheDriverPerThread = true
 quitCachedDriverOnShutdown = true
