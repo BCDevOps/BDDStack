@@ -1,3 +1,5 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
 plugins {
     id "idea"
     id "groovy"
@@ -7,7 +9,7 @@ plugins {
 
 ext {
     // The drivers we want to use
-    drivers = ["firefox", "chrome", "chromeHeadless"]
+    drivers = ["firefox", "firefoxHeadless", "chrome", "chromeHeadless","ie","edge"]
 
     ext {
         groovyVersion = '2.4.12'
@@ -15,8 +17,12 @@ ext {
         seleniumVersion = '3.6.0'
         chromeDriverVersion = '2.32'
         geckoDriverVersion = '0.18.0'
+        ieDriverVersion = '3.6'
+        edgeDriverVersion = seleniumVersion
     }
 }
+
+apply from: "gradle/osSpecificDownloads.gradle"
 
 repositories {
     mavenCentral()
@@ -39,11 +45,15 @@ dependencies {
     // Drivers
     testCompile "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
     testCompile "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
+    testCompile "org.seleniumhq.selenium:selenium-ie-driver:$seleniumVersion"
+    testCompile "org.seleniumhq.selenium:selenium-edge-driver:$seleniumVersion"
+
 }
 
 webdriverBinaries {
     chromedriver chromeDriverVersion
     geckodriver geckoDriverVersion
+    //iedriver ieDriverVersion
 }
 
 drivers.each { driver ->
@@ -55,6 +65,20 @@ drivers.each { driver ->
         systemProperty "geb.build.reportsDir", reporting.file("geb/$name")
         systemProperty "geb.env", driver
     }
+}
+
+ieTest {
+    dependsOn unzipIeDriver
+
+    def iedriverFilename = Os.isFamily(Os.FAMILY_WINDOWS) ? "IEDriverServer.exe" : "IEDriverServer"
+    systemProperty "webdriver.ie.driver", new File(unzipIeDriver.outputs.files.singleFile, iedriverFilename).absolutePath
+}
+
+edgeTest {
+    dependsOn unzipEdgeDriver
+
+    def edgedriverFilename = Os.isFamily(Os.FAMILY_WINDOWS) ? "MicrosoftWebDriver.exe" : "MicrosoftWebDriver.exe"
+    systemProperty "webdriver.edge.driver", new File(unzipEdgeDriver.outputs.files.singleFile,edgedriverFilename).absolutePath
 }
 
 test {
