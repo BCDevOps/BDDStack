@@ -14,7 +14,8 @@ RUN yum -y install firefox; yum clean all
 
 # Add Chrome as a user
 RUN groupadd -r chrome && useradd -r -g chrome -G audio,video chrome \
-    && mkdir -p /home/chrome && chown -R chrome:chrome /home/chrome
+    && mkdir -p /home/chrome && chown -R chrome:chrome /home/chrome && \
+    dbus-uuidgen > /var/lib/dbus/machine-id
 
 # Run Chrome non-privileged
 USER chrome
