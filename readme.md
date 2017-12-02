@@ -29,5 +29,5 @@ Replace `./gradlew` with `gradlew.bat` in the above examples if you're on Window
 Please ask questions on our [Slack Channel][slack_channel] and raise issues in [Geb issue tracker][issue_tracker].
 
 [dockerfile]: https://github.com/agehlers/openshift-tools/blob/master/provisioning/jenkins-slaves/chrome/Dockerfile
-[issue_tracker]: https://github.com/rstens/BDDStack/issues/issues
+[issue_tracker]: https://github.com/rstens/BDDStack/issues
 [slack_channel]: https://devopspathfinder.slack.com/messages/C7J72K1MG
