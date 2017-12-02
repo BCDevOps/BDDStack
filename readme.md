@@ -13,7 +13,10 @@ The following commands will launch the tests with the individual browsers:
     ./gradlew chromeTest
     ./gradlew chromeHeadlessTest
     ./gradlew firefoxTest
-
+    ./gradlew firefoxHeadlessTest
+    ./gradlew edgeTest
+    ./gradlew ieTest
+    
 To run with all, you can run:
 
     ./gradlew test
@@ -22,6 +25,6 @@ Replace `./gradlew` with `gradlew.bat` in the above examples if you're on Window
 
 ## Questions and issues
 
-Please ask questions on our Slack Channel and raise issues in [Geb issue tracker][issue_tracker].
+Please ask questions on our [Slack Channel]: https://devopspathfinder.slack.com/messages/C7J72K1MG and raise issues in [Geb issue tracker][issue_tracker].
 
 [issue_tracker]: https://github.com/rstens/BDDStack/issues/issues
