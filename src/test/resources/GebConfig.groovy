@@ -43,14 +43,10 @@ environments {
 	// run via “./gradlew firefoxTest”
 	// See: https://github.com/SeleniumHQ/selenium/wiki/FirefoxDriver
 	firefox {
-		atCheckWaiting = 1
-
 		driver = { new FirefoxDriver() }
 	}
 	
 	firefoxHeadless {
-		atCheckWaiting = 1
-
 		driver = {
 			FirefoxOptions o = new FirefoxOptions()
 			o.addArguments("-headless")
