@@ -14,8 +14,11 @@ import org.openqa.selenium.edge.EdgeDriver
 import org.openqa.selenium.remote.DesiredCapabilities
 
 waiting {
-	timeout = 2
+	timeout = 15
+	retryInterval = 1
 }
+
+atCheckWaiting = [20, 1]
 
 environments {
 	
