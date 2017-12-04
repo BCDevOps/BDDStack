@@ -77,7 +77,7 @@ environments {
 
 baseNavigatorWaiting = true
 
-// Allows for setting you baseurl in an environmnet variable.
+// Allows for setting you baseurl in an environment variable.
 // This is particularly handy for development and the pipeline
 def env = System.getenv()
 baseUrl = env['BASEURL']
