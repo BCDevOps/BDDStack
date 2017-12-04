@@ -76,7 +76,14 @@ environments {
 // To run the tests with all browsers just run “./gradlew test”
 
 baseNavigatorWaiting = true
-baseUrl = "http://gebish.org"
+
+// Allows for setting you baseurl in an environmnet variable.
+// This is particularly handy for development and the pipeline
+def env = System.getenv()
+baseUrl = env['BASEURL']
+if (!baseUrl) {
+	baseUrl = "http://gebish.org"
+}
 
 println "BaseURL: ${baseUrl}"
 println "--------------------------"
