@@ -29,6 +29,14 @@ Replace `./gradlew` with `gradlew.bat` in the above examples if you're on Window
 
 Please ask questions on our [Slack Channel][slack_channel] and raise issues in [BDDStack issue tracker][issue_tracker].
 
+## Useful Links:
+http://www.gebish.org/manual/current
+http://spockframework.org/
+http://groovy-lang.org/
+https://inviqa.com/blog/bdd-guide
+https://github.com/SeleniumHQ/selenium/wiki
+
+
 [dockerfile]: https://github.com/agehlers/openshift-tools/blob/master/provisioning/jenkins-slaves/chrome/Dockerfile
 [issue_tracker]: https://github.com/rstens/BDDStack/issues
 [slack_channel]: https://devopspathfinder.slack.com/messages/C7J72K1MG
