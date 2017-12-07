@@ -8,7 +8,7 @@ The build is setup to work with a variety of browsers and we aim to add as many 
 A JenkinsSlave image has been created that can run Chrome/Firefox Headless tests. This offers a viable option for replacing phantomJs in the OpenShift pipeline. Please see the [JenkinsSlave Dockerfile][dockerfile] setup.
 This repository also holds a Dockerfile for a CentOS based image that will run headless tests as well.
 
-BDDStack is 100% compatible with the tests that were created in the previous incarnation of the framework [NavUnit][navunit]. Please see the wiki for instructions on how to use your NavUnit Tests in BDDStack.
+BDDStack is 100% compatible with the tests that were created in the previous incarnation of the framework called [NavUnit][navunit] (which is now deprecated). Please see the wiki for instructions on how to use your NavUnit Tests in BDDStack.
 
 ## Usage
 
