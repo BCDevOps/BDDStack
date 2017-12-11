@@ -10,6 +10,8 @@ This repository also holds a Dockerfile for a CentOS based image that will run h
 
 BDDStack is 100% compatible with the tests that were created in the previous incarnation of the framework called [NavUnit][navunit] (which is now deprecated). Please see the wiki for instructions on how to use your NavUnit Tests in BDDStack.
 
+Please see the [Wiki](https://github.com/BCDevOps/BDDStack/wiki) for more details.
+
 ## Usage
 
 The following commands will launch the tests with the individual browsers:
