@@ -1,5 +1,5 @@
 This is an example of a Dockerfile that you can use to create a local image.
-This is not the OpenShift Dockerfile, that one can be found [here:](https://github.com/BCDevOps/openshift-tools/blob/master/provisioning/jenkins-slaves/bddstack/Dockerfile)
+This is not the OpenShift Dockerfile, that one can be found [here](https://github.com/BCDevOps/openshift-tools/blob/master/provisioning/jenkins-slaves/bddstack/Dockerfile).
 
 Once the docker image is running:
 
