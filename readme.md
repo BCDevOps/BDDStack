@@ -1,4 +1,5 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/BCDevOps/BDDStack.git/badge.svg)](https://snyk.io/test/github/BCDevOps/BDDStack.git)[![Releases](https://img.shields.io/github/release/bcdevops/bddstack.svg)]
+[![Known Vulnerabilities](https://snyk.io/test/github/BCDevOps/BDDStack.git/badge.svg)](https://snyk.io/test/github/BCDevOps/BDDStack.git)
+[![Releases](https://img.shields.io/github/release/bcdevops/bddstack.svg)]
 
 # BDDStack
 
