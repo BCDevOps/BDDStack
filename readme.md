@@ -22,8 +22,8 @@ The following commands will launch the tests with the individual browsers:
     ./gradlew chromeHeadlessTest //Will run in pipeline as well
     ./gradlew firefoxTest
     ./gradlew firefoxHeadlessTest //Will run in pipeline as well
-    ./gradlew edgeTest
-    ./gradlew ieTest //Read wiki for set up instructions
+    ./gradlew edgeTest //only on windows
+    ./gradlew ieTest //Read wiki for set up instructions, only on windows
     ./gradlew safariTest //Only for MacOS, read wiki for instructions.
     
 To run with all, you can run:
