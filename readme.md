@@ -48,7 +48,7 @@ Please ask questions on our [Slack Channel][slack_channel] and raise issues in [
 
 <https://github.com/SeleniumHQ/selenium/wiki>
 
-<https://dzone.com/articles/integrating-gatling-into-a-gradle-build-understand>
+[SourceSets]<https://dzone.com/articles/integrating-gatling-into-a-gradle-build-understand>
 
 
 [navunit]: https://github.com/bcgov/navUnit
