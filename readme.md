@@ -36,7 +36,7 @@ Replace `./gradlew` with `gradlew.bat` in the above examples if you're on Window
 
 Please ask questions on our [Slack Channel][slack_channel] and raise issues in [BDDStack issue tracker][issue_tracker].
 
-## Useful Links:
+## Useful Linkss
 
 <http://www.gebish.org/manual/current>
 
@@ -47,6 +47,8 @@ Please ask questions on our [Slack Channel][slack_channel] and raise issues in [
 <https://inviqa.com/blog/bdd-guide>
 
 <https://github.com/SeleniumHQ/selenium/wiki>
+
+<https://dzone.com/articles/integrating-gatling-into-a-gradle-build-understand>
 
 
 [navunit]: https://github.com/bcgov/navUnit
