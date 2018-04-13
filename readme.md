@@ -32,6 +32,22 @@ To run with all, you can run:
 
 Replace `./gradlew` with `gradlew.bat` in the above examples if you're on Windows.
 
+
+## Source-Sets
+
+Gradle source sets
+```
+sourceSets {
+   test {
+       groovy {
+           srcDirs = [‘src/groovy’]
+       }
+       resources {
+           srcDirs = [‘src/resources’]
+       }
+   }
+}
+```
 ## Questions and issues
 
 Please ask questions on our [Slack Channel][slack_channel] and raise issues in [BDDStack issue tracker][issue_tracker].
@@ -48,7 +64,9 @@ Please ask questions on our [Slack Channel][slack_channel] and raise issues in [
 
 <https://github.com/SeleniumHQ/selenium/wiki>
 
-SourceSets: <https://dzone.com/articles/integrating-gatling-into-a-gradle-build-understand>
+SourceSets: 
+* <https://docs.gradle.org/current/userguide/java_plugin.html#sec:working_with_java_source_sets>
+* <https://dzone.com/articles/integrating-gatling-into-a-gradle-build-understand>
 
 
 [navunit]: https://github.com/bcgov/navUnit
