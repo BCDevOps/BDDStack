@@ -13,3 +13,8 @@ Once the docker image is running:
 Xvfb :1 -screen 0 1024x768x24 &
 export DISPLAY=:1
 ~~~~
+
+
+Potential issue with webdriver session not found: (https://github.com/elgalu/docker-selenium/issues/20)
+
+* docker run --shm-size 8G (Specify the shared memory space to be greater than default value (which is 64M) for cached driver data)
