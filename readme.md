@@ -48,11 +48,15 @@ sourceSets {
    }
 }
 ```
+
+## Openshift intergration:
+To run v1.5 version of BDDStack in openshift, plese use `docker-registry.default.svc:5000/bcgov/jenkins-slave-bddstack:v1-stable` as the base image.
+
 ## Questions and issues
 
 Please ask questions on our [Slack Channel][slack_channel] and raise issues in [BDDStack issue tracker][issue_tracker].
 
-## Useful Linkss
+## Useful Links
 
 <http://www.gebish.org/manual/current>
 
